@@ -1,4 +1,4 @@
-package main.java.jaes.bridge;
+package jaes.bridge;
 
 public abstract class ListItemView {
     protected IViewModel viewModel;
@@ -7,7 +7,7 @@ public abstract class ListItemView {
         this.viewModel = viewModel;
     }
 
-    public string render() {
+    public String render() {
         return """
                     <div class="list-item">
                         <h2>Default ListItemView</h2>

@@ -1,20 +1,19 @@
+package jaes.bridge;
 
-package main.java.jaes.bridge;
+public class StreamVierwModel implements IViewModel {
+    ItemViews stream;
 
-public class StreamVierwModel extends IViewModel {
-    string stream;
-
-    public StreamVierwModel(string stream) {
+    public StreamVierwModel(ItemViews stream) {
         this.stream = stream;
     }
 
     @Override
-    public string title() {
-        return "(STREAM)" + this.stream;
+    public String title() {
+        return "(STREAM)" + this.stream.getTitle();
     }
 
     @Override
-    public string image() {
-        return "(STREAM)" + this.stream + ".png";
+    public String image() {
+        return "(STREAM)" + this.stream.getImage() + ".png";
     }
 }

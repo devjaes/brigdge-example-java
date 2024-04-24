@@ -1,7 +1,7 @@
-package main.java.jaes.bridge;
+package jaes.bridge;
 
 public interface IViewModel {
-    string title();
+    String title();
 
-    string image();
+    String image();
 }

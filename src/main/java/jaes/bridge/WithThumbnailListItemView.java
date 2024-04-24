@@ -1,10 +1,12 @@
+package jaes.bridge;
+
 public class WithThumbnailListItemView extends ListItemView {
     public WithThumbnailListItemView(IViewModel viewModel) {
         super(viewModel);
     }
 
     @Override
-    public string render() {
+    public String render() {
         return """
                     <div class="list-item">
                         <h2>WithThumbnailListItemView</h2>

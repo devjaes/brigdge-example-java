@@ -1,4 +1,4 @@
-package main.java.jaes.bridge;
+package jaes.bridge;
 
 public class JustTextListItemView extends ListItemView {
 
@@ -7,7 +7,7 @@ public class JustTextListItemView extends ListItemView {
     }
 
     @Override
-    public string render() {
+    public String render() {
         return """
                     <div class="list-item">
                         <h2>JustTextListItemView</h2>

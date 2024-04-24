@@ -1,20 +1,20 @@
-package main.java.jaes.bridge;
+package jaes.bridge;
 
 public class VideoViewModel implements IViewModel {
-    string video;
+    ItemViews video;
 
-    public VideoViewModel(string video) {
+    public VideoViewModel(ItemViews video) {
         this.video = video;
     }
 
     @Override
-    public string title() {
-        return "(VIDEO)" + this.video;
+    public String title() {
+        return "(VIDEO)" + this.video.getTitle();
     }
 
     @Override
-    public string image() {
-        return "(VIDEO)" + this.video + ".png";
+    public String image() {
+        return "(VIDEO)" + this.video.getImage() + ".png";
     }
 
 }
